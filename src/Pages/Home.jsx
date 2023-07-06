@@ -25,12 +25,12 @@ const Home = () => {
               <img src={logo1} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
               <p className='font-normal text-xsm w-32 '>Guaranteed satisfaction with customer support and service</p>
               </div>
-              <img src={arrow} className='w-full mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
               <img src={logo2} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
               <p className='font-normal text-xsm w-32 '>Transfer of 100% safe funds for seller and buyer</p>
               </div>
-              <img src={arrow} className='w-full mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
               <img src={logo3} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
               <p className='font-normal text-xsm w-32 '>Validation of all properties</p>
