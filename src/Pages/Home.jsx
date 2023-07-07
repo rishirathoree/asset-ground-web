@@ -4,6 +4,7 @@ import logo1 from '../assets/logo1.png'
 import logo2 from '../assets/logo2.png'
 import logo3 from '../assets/logo3.png'
 import arrow from '../assets/vector.png'
+
 const Home = () => {
     const dummyData = Array(10).fill(20)
     return (

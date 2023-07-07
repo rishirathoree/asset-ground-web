@@ -1,22 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo1 from '../assets/logo1.png'
 import logo2 from '../assets/logo2.png'
 import logo3 from '../assets/logo3.png'
 import arrow from '../assets/vector.png'
+import { Link } from 'react-router-dom'
+import NeedMoreInfo from '../Components/NeedMoreInfo'
+
 const InterestedPage = () => {
+  const [NeedMoreInfos,setNeedMoreInfos] = useState(false)
   return (
     <>
-    <div className='lg:px-20 md:px-12 sm:px-4 py-8 flex items-center justify-center'>
-        <div className='flex items-center justify-center flex-col p-8 bg-white shadow-custom shadow-black/5 lg:w-2/3 md:w-2/3 sm:w-full rounded-lg space-y-8'>
+    {NeedMoreInfos ? 
+
+    <NeedMoreInfo/> 
+    
+    : 
+    <>
+    <div className='lg:px-20 md:px-12 sm:px-4 py-20 flex items-center justify-center'>
+        <div className='flex items-center justify-center flex-col p-8 bg-white shadow-custom shadow-black/5 lg:w-max md:w-2/3 sm:w-full rounded-lg space-y-8'>
             <p className='font-semibold text-lg uppercase'>Interested</p>
-            <div className='lg:w-2/4 md:w-2/4 sm:w-full text-center'>
+            <div className='lg:w-3/4 md:w-3/4 sm:w-full text-center'>
             <p>Hit the below button "Start" to let one of customer advisor contact you to start the buying process.</p>
             <p className='text-red-500'>Or</p>
             <p>Hit need more info button to ask for a specific detail before starting the buying process</p>
             </div>
 
-            <div>
-            <div className='flex items-start justify-center'>
+            <div className='flex items-start gap-4  justify-center'>
               <div className='flex items-center flex-col space-y-4 text-center'>
               <img src={logo1} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
               <p className='font-normal text-xsm w-32 '>Guaranteed satisfaction with customer support and service</p>
@@ -32,9 +41,14 @@ const InterestedPage = () => {
               <p className='font-normal text-xsm w-32 '>Validation of all properties</p>
               </div>
             </div>
-            </div>
+            
+            <div className='pt-8 '>
+  <button className='font-medium text-white text-sm px-12 py-3 rounded bg-[#0E4B72]'>Start</button>
+  <span onClick={()=>{setNeedMoreInfos(true)}} className='font-normal text-sm p-4 rounded text-[#0E4B72]'>Need More Info?</span>
+</div>
         </div>
     </div>
+    </>}
     </>
   )
 }

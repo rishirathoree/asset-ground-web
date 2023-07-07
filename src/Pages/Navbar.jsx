@@ -53,16 +53,16 @@ const Navbar = () => {
             <ul className="sideMenu lg:translate-x-0 md:-translate-x-full sm:-translate-x-full lg:shadow-none md:shadow-lg sm:shadow-lg flex lg:visible md:invisible sm:invisible lg:flex-row md:flex-col sm:flex-col lg:static md:fixed sm:fixed top-0 left-0 lg:w-full md:w-2/5 sm:w-2/4 lg:duration-0 md:duration-500 sm:duration-500 lg:bg-transparent md:bg-white sm:bg-white lg:h-full md:screen sm:h-screen z-50">
               <li className="w-full text-white">
                 <div className="lg:hidden md:flex sm:flex flex-col">
-                  <div className="flex p-3 bg-red-600 w-full items-center gap-2">
-                    <i className="bx bx-user"></i>
+                  <div className="flex p-3 border-b text-black w-full items-center gap-2">
                   <p className="font-normal text-sm">My Account</p>
                   </div>
-                  <div className="flex w-full items-center justify-between gap-4 p-2">
-                    <div className="w-full text-center">
-                      <p className="text-sm font-normal rounded-sm bg-red-500 w-full p-3 font-medium capitalize">login</p>
+                  <div className="flex w-full border-b items-center justify-between gap-2 p-2">
+                    <div className="w-1/2 text-center">
+                      <p className="text-sm rounded-sm bg-red-500 w-full p-3 font-medium capitalize">login</p>
                     </div>
-                    <div className="w-full text-center">
-                      <p className="text-sm font-normal rounded-sm bg-[#0E4B72] w-full p-3 font-medium capitalize">Sell</p>
+                    <div className="w-1/2 text-center bg-[#0E4B72] flex items-center justify-center space-x-1 p-3">
+                      <i className="bx bx-x ring-[1.5px] ring-white p-[0.1px] text-[14px] rounded-full"></i>
+                      <p className="text-sm rounded-sm  font-medium capitalize">Sell</p>
                     </div>
                   </div>
                 </div>
