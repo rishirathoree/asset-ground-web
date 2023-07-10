@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 const Dashboard = () => {
-    const dummyData = Array(50).fill(1)
+    const dummyData = Array(5).fill(1)
     const switches = ['Website','Youtube Channels','Domain Names','All']
     const [currentActiveSwitch,setCurrentActiveSwitches] = useState('Website')
     
