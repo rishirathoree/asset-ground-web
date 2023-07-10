@@ -90,10 +90,12 @@ const Navbar = () => {
             </div>  
             </Link>
             }
-            <button className="lg:flex md:hidden sm:hidden flex items-center bg-[#0E4B72] px-4 space-x-1 py-2 text-white rounded">
+            <Link to="/sell">
+              <button className="lg:flex md:hidden sm:hidden flex items-center bg-[#0E4B72] px-4 space-x-1 py-2 text-white rounded">
               <i className="bx bx-x ring-[1.5px] ring-white p-[0.1px] text-[14px] rounded-full"></i>
               <p className="font-bold text-sm">Sell</p>
             </button>
+            </Link>
           </div>
         </div>
       ) : null}

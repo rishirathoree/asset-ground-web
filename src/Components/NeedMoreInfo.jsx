@@ -3,7 +3,7 @@ import React from "react";
 const NeedMoreInfo = () => {
   return (
     <>
-      <div className="flex items-center lg:px-20 md:px-12 sm:px-4 py-20 justify-center">
+      <div className="flex items-center lg:px-20 md:px-12 sm:px-4 lg:py-32 md:py-32 sm:py-20 justify-center">
         <div className="shadow-custom p-8 rounded-lg lg:w-2/4 md:w-2/4 sm:w-full h-full bg-white">
             <p className="font-semibold text-center text-2xl">Need More Info?</p>
             <div className='pt-6'>

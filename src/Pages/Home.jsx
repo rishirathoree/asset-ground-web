@@ -21,19 +21,25 @@ const Home = () => {
             </div>
 
             <div>
-            <div className='flex items-start justify-center'>
+            <div className='flex lg:flex-row md:flex-row sm:flex-col gap-4 items-start justify-center'>
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo1} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo1} className='' alt="" />
+              </div>
               <p className='font-normal text-xsm w-32 '>Guaranteed satisfaction with customer support and service</p>
               </div>
-              <img src={arrow} className=' mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-8 h-full w-32 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo2} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo2} alt="" />
+              </div>
               <p className='font-normal text-xsm w-32 '>Transfer of 100% safe funds for seller and buyer</p>
               </div>
-              <img src={arrow} className=' mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-8 h-full w-32 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo3} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo3} alt="" />
+            </div>
               <p className='font-normal text-xsm w-32 '>Validation of all properties</p>
               </div>
             </div>
@@ -63,9 +69,8 @@ const Home = () => {
 
                 <div className='flex items-center justify-between'>
                 <p className='text-sm font-medium lg:w-2/3 md:2/3 sm:w-2/3'>Lorem ipsum dolore aliquid assumenda perspiciatis non cupimolestiae.</p>
-                <div>
-                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
-                    </div>         
+
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>      
             </div>
                 
                 <p className='text-lg text-red-600 font-normal'>500 USD</p>

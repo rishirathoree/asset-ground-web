@@ -48,19 +48,19 @@ const ProductPage = () => {
 </div>
 </div>
 
-<div className='flex flex-col justify-between items-start lg:w-1/2 md:w-1/2 sm:w-full'>
+<div className='flex flex-col justify-between items-start lg:w-2/3 md:w-2/3 sm:w-full'>
 <div className='space-y-4 '>
 {/* about business */}
 <p className='font-extrabold text-lg'>About Business</p>
 
-<div className='flex items-center justify-between'>
-<div><p className='font-light text-xsm'>Field</p><p className='font-semibold text-sm'>eCommerce</p></div>
-<div>
+<div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2'>
+<span><p className='font-light text-xsm'>Field</p><p className='font-semibold text-sm'>eCommerce</p></span>
+<span>
 <p className='font-light text-xsm'>Starting Date</p><p className='font-semibold text-sm'>05 may 2020</p>
-</div>
-<div>
+</span>
+<span>
 <p className='font-light text-xsm'>Working Hours/Week</p><p className='font-semibold text-sm'>20</p>
-</div>
+</span>
 </div>
 
 <div className=''>
@@ -79,16 +79,13 @@ const ProductPage = () => {
 {/* description */}
 <p className='font-medium text-lg'>Audience</p>
 <div className='mt-6 space-y-4'>
-<div className='grid grid-cols-3'>
-<div><p className='font-light text-xsm'>Countries of the majority of users? </p><p className='font-semibold text-sm'>UAE, KSA</p></div>
-<div><p className='font-light text-xsm'>Website Languages</p><p className='font-semibold text-sm'>English</p></div>
-<div><p className='font-light text-xsm'>Analytics Tools Available</p><p className='font-semibold text-sm'>Yes</p></div>
-</div>
-
-<div className='grid grid-cols-3'>
-<div><p className='font-light text-xsm'>Avg. Monthly Page views</p><p className='font-semibold text-sm'>10,000</p></div>
-<div><p className='font-light text-xsm'>Avg. Monthly Users</p><p className='font-semibold text-sm'>500</p></div>
-<div><p className='font-light text-xsm'>Analytics Tools Available</p><p className='font-semibold text-sm'>Yes</p></div>
+<div className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4'>
+<span><p className='font-light text-xsm'>Countries of the majority of users? </p><p className='font-semibold text-sm'>UAE, KSA</p></span>
+<span><p className='font-light text-xsm'>Website Languages</p><p className='font-semibold text-sm'>English</p></span>
+<span><p className='font-light text-xsm'>Analytics Tools Available</p><p className='font-semibold text-sm'>Yes</p></span>
+<span><p className='font-light text-xsm'>Avg. Monthly Page views</p><p className='font-semibold text-sm'>10,000</p></span>
+<span><p className='font-light text-xsm'>Avg. Monthly Users</p><p className='font-semibold text-sm'>500</p></span>
+<span><p className='font-light text-xsm'>Analytics Tools Available</p><p className='font-semibold text-sm'>Yes</p></span>
 </div>
 </div>
 </div>
@@ -115,22 +112,15 @@ const ProductPage = () => {
 </div>
 
 <div className='mt-6 space-y-4'>
-<div className='grid grid-cols-3'>
-<div><p className='font-light text-xsm'>Revenue for last 30 days</p><p className='font-semibold text-sm'>10,000 USD</p></div>
-<div><p className='font-light text-xsm'>Revenue for last 6 month</p><p className='font-semibold text-sm'>6000 USD</p></div>
-<div><p className='font-light text-xsm'>Revenue for last 12 month</p><p className='font-semibold text-sm'>6000 USD</p></div>
-</div>
-
-<div className='grid grid-cols-3'>
-<div><p className='font-light text-xsm'>Net profit last 3 month</p><p className='font-semibold text-sm'>10,000 USD</p></div>
-<div><p className='font-light text-xsm'>Net profit last 6 month</p><p className='font-semibold text-sm'>6000 USD</p></div>
-<div><p className='font-light text-xsm'>Net profit last 12 month</p><p className='font-semibold text-sm'>6000 USD</p></div>
-</div>
-
-<div className='grid grid-cols-3'>
-<div><p className='font-light text-xsm'>Asking Price</p><p className='font-semibold text-sm'>10,000 USD</p></div>
-<div><p className='font-light text-xsm'>Multiple</p><p className='font-semibold text-sm'>6.5</p></div>
-</div>
+<div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4'>
+<span><p className='font-light text-xsm'>Revenue for last 30 days</p><p className='font-semibold text-sm'>10,000 USD</p></span>
+<span><p className='font-light text-xsm'>Revenue for last 6 month</p><p className='font-semibold text-sm'>10,000 USD</p></span>
+<span><p className='font-light text-xsm'>Revenue for last 12 month</p><p className='font-semibold text-sm'>6,000 USD</p></span>
+<span><p className='font-light text-xsm'>Net profit last 3 month</p><p className='font-semibold text-sm'>6,000 USD</p></span>
+<span><p className='font-light text-xsm'>Net profit last 6 month</p><p className='font-semibold text-sm'>10,000 USD</p></span>
+<span><p className='font-light text-xsm'>Net profit last 12 month</p><p className='font-semibold text-sm'>10,000 USD</p></span>
+<span><p className='font-light text-xsm'>Asking Price</p><p className='font-semibold text-sm'>2000</p></span>
+<span><p className='font-light text-xsm'>Multiple</p><p className='font-semibold text-sm'>6</p></span>
 </div>
 </div>
 
@@ -139,6 +129,7 @@ const ProductPage = () => {
 <span onClick={()=>{setIsInterested('no')}} className='cursor-pointer font-medium text-sm p-4 rounded text-[#0E4B72]'>Need More Info?</span>
 </div>
 
+</div>
 </div>
 </div>
 </div>

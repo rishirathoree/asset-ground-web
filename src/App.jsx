@@ -13,7 +13,7 @@ import AdditionInormation from "./Pages/AdditionInormation";
 import Dashboard from "./Pages/Dashboard";
 import ProductPage from "./Pages/ProductPage";
 import Account from "./Pages/Account";
-import InterestedPage from "./Pages/InterestedPage";
+import Sell from "./Pages/Sell";
 const App = () => {
   return (
     <>
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/productPage" element={<ProductPage />} />
           <Route path="/Account" element={<Account />} />
-          <Route path="/interested" element={<InterestedPage />} />
+          <Route path="/sell" element={<Sell />} />
         </Routes>
         <Footer />
       </BrowserRouter>

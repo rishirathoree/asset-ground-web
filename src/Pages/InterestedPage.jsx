@@ -16,7 +16,7 @@ const InterestedPage = () => {
     
     : 
     <>
-    <div className='lg:px-20 md:px-12 sm:px-4 py-20 flex items-center justify-center'>
+    <div className='lg:px-20 md:px-12 sm:px-4 lg:py-32 md:py-32 sm:py-20 flex items-center justify-center'>
         <div className='flex items-center justify-center flex-col p-8 bg-white shadow-custom shadow-black/5 lg:w-max md:w-2/3 sm:w-full rounded-lg space-y-8'>
             <p className='font-semibold text-lg uppercase'>Interested</p>
             <div className='lg:w-3/4 md:w-3/4 sm:w-full text-center'>
@@ -25,19 +25,25 @@ const InterestedPage = () => {
             <p>Hit need more info button to ask for a specific detail before starting the buying process</p>
             </div>
 
-            <div className='flex items-start gap-4  justify-center'>
+            <div className='flex lg:flex-row md:flex-row sm:flex-col gap-4 items-start justify-center'>
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo1} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo1} className='' alt="" />
+              </div>
               <p className='font-normal text-xsm w-32 '>Guaranteed satisfaction with customer support and service</p>
               </div>
-              <img src={arrow} className='mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-8 h-full w-24 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo2} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo2} alt="" />
+              </div>
               <p className='font-normal text-xsm w-32 '>Transfer of 100% safe funds for seller and buyer</p>
               </div>
-              <img src={arrow} className='mt-4 h-full w-20 lg:block md:hidden sm:hidden' alt="" />
+              <img src={arrow} className=' mt-8 h-full w-24 lg:block md:hidden sm:hidden' alt="" />
               <div className='flex items-center flex-col space-y-4 text-center'>
-              <img src={logo3} className='w-12 rounded-full h-full p-2 shadow-custom' alt="" />
+              <div className='rounded-full h-full p-4 shadow-custom'>
+              <img src={logo3} alt="" />
+            </div>
               <p className='font-normal text-xsm w-32 '>Validation of all properties</p>
               </div>
             </div>
