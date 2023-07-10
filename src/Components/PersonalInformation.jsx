@@ -11,23 +11,23 @@ const PersonalInformation = () => {
         <div className='lg:col-start-1 lg:col-end-3 flex items-center gap-4 w-full'>
         <div className='pt-3 w-full'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>First Name</p>
-            <input type="text" placeholder='Enter First Name' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="text" placeholder='Enter First Name' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
 
         <div className='pt-3 w-full'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Last Name</p>
-            <input type="text" placeholder='Last Name' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="text" placeholder='Last Name' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
         </div>
 
         <div className='pt-3 w-full col-start-1 col-end-3'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Email</p>
-            <input type="text" placeholder='Enter Email' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="text" placeholder='Enter Email' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
 
         <div className='pt-3 w-full col-start-1 col-end-3'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Where are you located at?</p>
-            <select type="text" placeholder='Enter First Name' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'><option>Select Location</option></select>
+            <select type="text" placeholder='Enter First Name' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'><option>Select Location</option></select>
         </div>
 
         
@@ -35,12 +35,12 @@ const PersonalInformation = () => {
         <div className='lg:col-start-1 lg:col-end-3 flex items-center gap-4 w-full'>
         <div className='pt-3 w-full'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Preferred Contact Time</p>
-            <select type="text" placeholder='Enter First Name' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'><option>Select Time</option></select>
+            <select type="text" placeholder='Enter First Name' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'><option>Select Time</option></select>
         </div>
 
         <div className='pt-3 w-full'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Time Zone</p>
-            <select type="text" placeholder='Enter Timezone' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'><option>Select Time Zone</option></select>
+            <select type="text" placeholder='Enter Timezone' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'><option>Select Time Zone</option></select>
         </div>
         </div>
 

@@ -16,7 +16,7 @@ const Account = () => {
         {name:'Logout',icon:'bx bx-log-out'},
     ]
   return (
-    <div className='px-20 py-12 w-full justify-center flex items-center'>
+    <div className='px-20 py-12 w-full justify-center lg:py-32 md:py-32 sm:py-20 flex items-center'>
         <div className='flex gap-4 w-full'>
             <div className='bg-white h-min space-y-4 shadow-lg rounded-md shadow-black/5 py-4 lg:col-start-1 w-max lg:col-end-1'>
                 {sidebarTabs.map((item,index)=>{

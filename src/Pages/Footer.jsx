@@ -35,16 +35,16 @@ const Footer = () => {
       </ul>
       <div className="space-y-4">
         <p>Get updates when a specific property type available</p>
-        <input type="text" className="focus:outline-none outline-none ring-1 ring-gray-400/50 bg-gray-200 rounded w-full p-2" />
+        <input type="text" className="focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm bg-gray-100" />
         <button className='text-center p-3  text-white bg-[#0E4B72] w-max rounded-lg'>Subscribe</button>
       </div>
       </div>
     </div>
     <div className="border-t p-2 flex items-center justify-evenly">
-        <p className="text-sm font-normal text-gray-400">© 2023, Asset Ground Powered by XYZ</p>
+        <p className="lg:text-sm md:text-sm sm:text-[12px] font-normal text-gray-400">© 2023, Asset Ground Powered by XYZ</p>
     <div className="items-center flex gap-4">
-    <p className="text-sm font-normal text-gray-400">Terms & Conditions</p>
-    <p className="text-sm font-normal text-gray-400">Privacy Policy</p>
+    <p className="lg:text-sm md:text-sm sm:text-[12px] font-normal text-gray-400">Terms & Conditions</p>
+    <p className="lg:text-sm md:text-sm sm:text-[12px] font-normal text-gray-400">Privacy Policy</p>
     </div>
     </div>
     </>

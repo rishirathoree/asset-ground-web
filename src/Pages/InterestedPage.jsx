@@ -44,7 +44,7 @@ const InterestedPage = () => {
             
             <div className='pt-8 '>
   <button className='font-medium text-white text-sm px-12 py-3 rounded bg-[#0E4B72]'>Start</button>
-  <span onClick={()=>{setNeedMoreInfos(true)}} className='font-normal text-sm p-4 rounded text-[#0E4B72]'>Need More Info?</span>
+  <span onClick={()=>{setNeedMoreInfos(true)}} className='cursor-pointer font-normal text-sm p-4 rounded text-[#0E4B72]'>Need More Info?</span>
 </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ const Dashboard = () => {
     
   return (
     <>
-    <div className='lg:px-20 md:px-12 sm:px-4 py-12 space-y-4'>
+    <div className='lg:px-20 md:px-12 sm:px-4 lg:py-32 md:py-32 sm:py-20 space-y-4'>
         <div className='flex lg:flex-row md:flex-row  sm:flex-col lg:items-center md:items-center sm:items-start justify-between gap-4'>
         <div className='switches flex flex-wrap items-center'>
             {switches.map((item,index)=>{

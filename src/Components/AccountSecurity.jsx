@@ -10,17 +10,17 @@ const AccountSecurity = () => {
 
         <div className='pt-3 w-full col-start-1 col-end-3'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Password</p>
-            <input type="text" placeholder='*****' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="text" placeholder='*****' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
 
         <div className='pt-3 w-full col-start-1 col-end-3'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>New Password</p>
-            <input type="password" placeholder='********' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="password" placeholder='********' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
 
         <div className='pt-3 w-full col-start-1 col-end-3'>
             <p className='font-medium text-xsm text-gray-400 text-sm'>Confirm New Password</p>
-            <input type="password" placeholder='********' className='text-xsm focus:outline-none outline-none ring-1 ring-black/20 p-3 w-full rounded'/>
+            <input type="password" placeholder='********' className='focus:outline-none outline-none ring-1 ring-black/5 focus:ring-black/20 duration-500 p-3 w-full rounded text-xsm'/>
         </div>
 
             <button className=' w-full p-3 mt-4 text-xsm font-medium rounded text-white bg-[#0E4B72]'>Save</button>
