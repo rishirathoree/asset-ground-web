@@ -8,13 +8,28 @@ const Dashboard = () => {
   return (
     <>
     <div className='lg:px-20 md:px-12 sm:px-4 lg:py-32 md:py-32 sm:py-20 space-y-4'>
-        <div className='flex lg:flex-row md:flex-row  sm:flex-col lg:items-center md:items-center sm:items-start justify-between gap-4'>
-        <div className='switches flex flex-wrap items-center'>
-            {switches.map((item,index)=>{
-                return(
-                    <p onClick={()=>{setCurrentActiveSwitches(item)}} className={`block p-4 flex-wrap text-red-500 font-medium ${currentActiveSwitch === item ? 'bg-red-500 text-white' : 'bg-red-500/10'}`}>{item}</p>
-                )
+        <div className='flex lg:flex-row md:flex-col  sm:flex-col lg:items-center md:items-center sm:items-start justify-between gap-4'>
+        <div>
+          <ul className="flex flex-wrap items-center">
+            {switches.map((item, index) => {
+              return (
+                <li
+                  onClick={() => {
+                    setCurrentActiveSwitches(item);
+                  }}
+                  className={`block lg:px-6 md:px-6 sm:px-4 py-4 cursor-pointer text-sm font-semibold ${
+                    currentActiveSwitch === item
+                      ? "bg-red-600 text-white"
+                      : "bg-red-600/20 text-red-500"
+                  }`}
+                >
+                  <p className="w-max lg:text-sm md:text-sm sm:text-[14px]">
+                    {item}
+                  </p>
+                </li>
+              );
             })}
+          </ul>
         </div>
         <div className='flex items-center gap-4'>
             {/* Search Input */}
@@ -46,10 +61,12 @@ const Dashboard = () => {
 
                 <div className='flex items-center justify-between'>
                 <p className='text-sm font-medium lg:w-2/3 md:2/3 sm:w-2/3'>Lorem ipsum dolore aliquid assumenda perspiciatis non cupimolestiae.</p>
-                <p className='text-[14px] font-normal text-green-500 bg-green-500/10 px-2 py-1 rounded-full'>Active</p>
-                </div>
+
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>      
+            </div>
                 
-                <p className='text-2xl text-red-600 font-bold'>500  USD</p>
+                <p className='text-lg text-red-600 font-normal'>500 USD</p>
+
 
                 <p className='text-sm font-medium text-gray-400'>Lorem ipsum Lorem ipsum dolor sit amet consecteturn maiores inventore impedit recusandae cumque reiciendis molestias veritatis accusamus. Ad excepturi temporibus sapiente quibusdam mollitia ab soluta dicta, repellendus, obcaecati vitae ipsa, tenetur suscipit. dolore aliquid assumenda perspiciatis non cupimolestiae.</p>
 

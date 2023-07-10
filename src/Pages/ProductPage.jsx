@@ -271,21 +271,21 @@ const ProductPage = () => {
                   <img
                     src={product1}
                     alt="Image 1"
-                    className="w-full h-full object-cover"
+                    className="w-full shadow-custom h-full object-cover"
                   />
                 </div>
                 <div>
                   <img
                     src={product2}
                     alt="Image 2"
-                    className="w-full h-full object-cover"
+                    className="w-full shadow-custom h-full object-cover"
                   />
                 </div>
                 <div>
                   <img
                     src={product3}
                     alt="Image 3"
-                    className="w-full h-full object-cover"
+                    className="w-full shadow-custom h-full object-cover"
                   />
                 </div>
               </div>

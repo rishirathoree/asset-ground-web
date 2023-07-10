@@ -63,10 +63,12 @@ const Home = () => {
 
                 <div className='flex items-center justify-between'>
                 <p className='text-sm font-medium lg:w-2/3 md:2/3 sm:w-2/3'>Lorem ipsum dolore aliquid assumenda perspiciatis non cupimolestiae.</p>
-                <p className='text-[14px] font-normal text-green-500 bg-green-500/10 px-3 py-1 rounded-full'>Active</p>
-                </div>
+                <div>
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    </div>         
+            </div>
                 
-                <p className='text-2xl text-red-600 font-bold'>500 USD</p>
+                <p className='text-lg text-red-600 font-normal'>500 USD</p>
 
                 <p className='text-sm font-normal text-gray-400'>Lorem ipsum Lorem ipsum dolor sit amet consecteturn maiores inventore impedit recusandae cumque reiciendis molestias veritatis accusamus. Ad excepturi temporibus sapiente quibusdam mollitia ab soluta dicta, repellendus, obcaecati vitae ipsa, tenetur suscipit. dolore aliquid assumenda perspiciatis non cupimolestiae.</p>
 
