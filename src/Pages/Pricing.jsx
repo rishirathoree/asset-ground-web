@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import banner1 from '../assets/frame1.png'
-import banner2 from '../assets/frame2.png'
-import banner3 from '../assets/frame3.png'
+import banner1 from '../assets/frame1.png';
+import banner2 from '../assets/frame2.png';
+import banner3 from '../assets/frame3.png';
+
 const Pricing = () => {
     const switches = ['Website','Youtube Channels','Domain Names']
     const [currentActiveSwitch,setCurrentActiveSwitches] = useState(0)
