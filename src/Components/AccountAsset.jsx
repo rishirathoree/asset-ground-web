@@ -1,14 +1,16 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import RemoveAssetModal from './RemoveAssetModal'
 const AccountAsset = () => {
     const dummyData = Array(4).fill(1)
+    const [removeThisSpecificAsset,setRemoveThisSpecificAsset] = useState(null)
+
   return (
     <>
     <div className='p-8 rounded-lg shadow-xl bg-white shadow-black/5'>
         <p className='font-medium text-2xl'>My Favourites</p>
 
         <div className='grid grid-cols-1 gap-4 mt-6'>
-        {dummyData.map((item)=>{
+        {dummyData.map((item,index)=>{
                 return(
                 <div className='p-6 rounded relative shadow-lg ring-1 ring-black/5 space-y-2 shadow-gray-200/40 bg-white w-full'>
                 <div className='flex items-center justify-between'>
@@ -23,7 +25,7 @@ const AccountAsset = () => {
                     </div>
                     <div>
                         <i className='bx bx-edit text-blue-500'></i>
-                        <i className='bx bx-trash text-orange-500'></i>
+                        <i onClick={()=>{setRemoveThisSpecificAsset(index)}} className='bx bx-trash text-orange-500'></i>
                     </div>
 
                 </div>
@@ -34,12 +36,14 @@ const AccountAsset = () => {
                 </div>
                 
                 <p className='text-2xl text-red-600 font-bold'>500  USD</p>
-                
+                <button className='absolute bottom-0 right-0 text-sm font-medium text-white p-2 rounded-tl bg-[#0E4B72]'>View More</button>
             </div>
                 )
             })}
         </div>
     </div>
+    <RemoveAssetModal removeThisSpecificAsset={removeThisSpecificAsset} setRemoveThisSpecificAsset={setRemoveThisSpecificAsset} />
+
     </>
   )
 }

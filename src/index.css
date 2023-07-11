@@ -44,3 +44,53 @@ body{
 .shadow-custom{
     box-shadow: 0px 0px 20px 0px #0000000f
 }
+
+
+
+.slect-allchk label {
+    margin: 0;
+    position: relative;
+    text-align: left;
+    display: block;
+    cursor: pointer
+}
+
+.slect-allchk label input[type=checkbox] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    margin: 0
+}
+
+.slect-allchk label input[type=checkbox]~span {
+    position: relative;
+    margin: 0;
+    height: 22px;
+    width: 22px;
+    border: 2px solid #a5a5a5;
+    display: block;
+    border-radius: 4px
+}
+
+.slect-allchk label input[type=checkbox]~span:before {
+    content: "";
+    position: absolute;
+    inset: 1px 0 0;
+    height: 14px;
+    width: 7px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotate(45deg);
+    margin: 0 auto
+}
+
+.slect-allchk label input[type=checkbox]:checked~span {
+    border-color: #3c3cff
+}
+
+.slect-allchk label input[type=checkbox]:checked~span:before {
+    border-bottom-color: #3c3cff;
+    border-right-color: #3c3cff
+}

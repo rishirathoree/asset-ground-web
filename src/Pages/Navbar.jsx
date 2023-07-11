@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       {location.pathname !== "/login" && location.pathname !== "/Signup" ? (
-        <div className="border-t-[8px] fixed w-full top-0 right-0 z-[99999] shadow-custom bg-white flex items-center justify-between lg:px-20 md:px-12 sm:px-4 py-4 border-[#d54049]">
+        <div className="border-t-[8px] fixed w-full top-0 right-0 z-[500] shadow-custom bg-white flex items-center justify-between lg:px-20 md:px-12 sm:px-4 py-4 border-[#d54049]">
           <div>
             <Link to="/dashboard"><img src={AGLogo} className="lg:w-52 md:w-52 sm:w-52" alt="" /></Link>
           </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
               </li>
               
-              {navs.map((items,index)=>{return(<><Link to={`/${items}`}><li className="p-3 w-full lg:border-b-0 md:border-b sm:border-b border-slate-100 lg:block lg:w-max md:w-full sm:w-full md:block sm:block"><p key={index} className="text-xsm">{items}</p></li></Link></>)})}
+              {navs.map((items,index)=>{return(<><Link to={`/${items.split(' ').join('')}`}><li className="p-3 w-full lg:border-b-0 md:border-b sm:border-b border-slate-100 lg:block lg:w-max md:w-full sm:w-full md:block sm:block"><p key={index} className="text-xsm">{items}</p></li></Link></>)})}
             </ul>
             <div onClick={()=>{document.body.classList.remove('Sidebar-collapse')}} className="sidebar-overlay invisible opacity-0 duration-500 w-full h-screen top-0 right-0 bg-black bg-opacity-20 z-10 fixed"></div>
             <div className="flex items-center gap-4">
@@ -92,7 +92,7 @@ const Navbar = () => {
             }
             <Link to="/sell">
               <button className="lg:flex md:hidden sm:hidden flex items-center bg-[#0E4B72] px-4 space-x-1 py-2 text-white rounded">
-              <i className="bx bx-x ring-[1.5px] ring-white p-[0.1px] text-[14px] rounded-full"></i>
+              <i className="bx bx-plus ring-[1.5px] ring-white p-[0.1px] text-[14px] rounded-full"></i>
               <p className="font-bold text-sm">Sell</p>
             </button>
             </Link>
