@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
               </li>
               
-              {navs.map((items,index)=>{return(<><Link to={`/${items.split(' ').join('')}`}><li className="p-3 w-full lg:border-b-0 md:border-b sm:border-b border-slate-100 lg:block lg:w-max md:w-full sm:w-full md:block sm:block"><p key={index} className="text-xsm">{items}</p></li></Link></>)})}
+              {navs.map((items,index)=>{return(<><Link to={`/${items.split(' ').join('')}`}><li className="p-3  w-full lg:border-b-0 md:border-b sm:border-b border-slate-100 lg:block lg:w-max md:w-full sm:w-full md:block sm:block"><p key={index} className="text-sm">{items}</p></li></Link></>)})}
             </ul>
             <div onClick={()=>{document.body.classList.remove('Sidebar-collapse')}} className="sidebar-overlay invisible opacity-0 duration-500 w-full h-screen top-0 right-0 bg-black bg-opacity-20 z-10 fixed"></div>
             <div className="flex items-center gap-4">

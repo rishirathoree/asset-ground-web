@@ -97,21 +97,23 @@ const YoutubeChannel = () => {
             <div>
                 <p className='font-light text-xsm text-gray-400'>Since when is it monetized?</p>
                     <span className='flex items-center gap-4 mt-2'>
-                    <div className="slect-allchk flex gap-2 items-center">
-                    <label>
-                        <input type="checkbox" name="checkbox" />
-                        <span></span>
-                    </label>
-                    <p className='font-light text-xsm text-gray-400'>Yes</p>
-                </div>
+                    <div class="rdobtn-card">
+                <label>
+                    <input type="radio" name="Activity" />
+                    <span><em></em>
+                        <i>Yes</i>
+                    </span>
+                </label>
+            </div>
 
-                <div className="slect-allchk flex gap-2 items-center">
-                    <label>
-                        <input type="checkbox" name="checkbox" />
-                        <span></span>
-                    </label>
-                    <p className='font-light text-xsm text-gray-400'>No</p>
-                </div> 
+            <div class="rdobtn-card">
+                <label>
+                    <input type="radio" name="Activity" />
+                    <span><em></em>
+                        <i>No</i>
+                    </span>
+                </label>
+            </div>
                 </span>
             </div>
 

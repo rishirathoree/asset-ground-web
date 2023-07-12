@@ -94,3 +94,66 @@ body{
     border-bottom-color: #3c3cff;
     border-right-color: #3c3cff
 }
+
+.rdobtn-card label {
+    position: relative
+}
+
+.rdobtn-card label input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    margin: 0
+}
+
+.rdobtn-card label input[type=radio]~span {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.rdobtn-card label input[type=radio]~span em {
+    display: block;
+    font-style: normal;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #d4d2d2;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 10px
+}
+
+.rdobtn-card label input[type=radio]~span em:before {
+    content: "";
+    background: #d4d2d2;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.rdobtn-card label input[type=radio]~span i {
+    color: #000;
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-style: normal
+}
+
+.rdobtn-card label input[type=radio]:checked~span em {
+    border-color:  #D54049;
+}
+
+.rdobtn-card label input[type=radio]:checked~span em:before {
+    background: #D54049
+}

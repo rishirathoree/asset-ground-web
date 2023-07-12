@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Otp = () => {
   return (
-    <div className='w-full h-screen flex justify-center py-12'>
+    <div className='flex justify-center w-full h-screen items-center flex-col px-8 lg:py-32 md:py-32 sm:py-20 lg:w-full md:w-full sm:w-full rounded-lg space-y-8 '>
         <div className='p-12 w- rounded h-min space-y-4 bg-white'>
         
             <p className='font-semibold text-2xl'>Enter 4 Digit Code</p>
