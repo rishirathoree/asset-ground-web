@@ -20,7 +20,7 @@ const Dashboard = () => {
                   className={`block lg:px-6 md:px-6 sm:px-4 py-4 cursor-pointer text-sm font-semibold ${
                     currentActiveSwitch === item
                       ? "bg-red-600 text-white"
-                      : "bg-red-600/20 text-red-500"
+                      : "bg-[#D540491A] text-red-500"
                   }`}
                 >
                   <p className="w-max lg:text-sm md:text-sm sm:text-[14px]">

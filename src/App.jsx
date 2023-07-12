@@ -18,6 +18,7 @@ import Howitworks from "./Pages/Howitworks";
 import Pricing from "./Pages/Pricing";
 import Aboutus from "./Pages/Aboutus";
 import Contactus from "./Pages/Contactus";
+import PageNotFound from "./Pages/PageNotFound";
 const App = () => {
   return (
     <>
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/Marketplace" element={<Dashboard />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Howitworks" element={<Howitworks />} />
+          <Route path="*" element={<PageNotFound />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />

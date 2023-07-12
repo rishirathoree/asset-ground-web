@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <>
-      {location.pathname !== "/login" && location.pathname !== "/Signup" ? (
+      {location.pathname !== "/login" && location.pathname !== "/Signup" && location.pathname !== "/404" ? (
         <div className="border-t-[8px] fixed w-full top-0 right-0 z-[500] shadow-custom bg-white flex items-center justify-between lg:px-20 md:px-12 sm:px-4 py-4 border-[#d54049]">
           <div>
             <Link to="/dashboard"><img src={AGLogo} className="lg:w-52 md:w-52 sm:w-52" alt="" /></Link>
